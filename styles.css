@@ -21,7 +21,7 @@ footer {
     margin-right: 15px;
     margin-left: 15px;
     padding: 10px;
-    font-size: 0.5em;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -62,4 +62,15 @@ main {
     padding: 10px;
     background-color: #e6e6e6;
 }
+
+#hero:hover {
+    background-color: #a58686;
+    transition: background-color 0.5s ease;
+}
+
+#features:hover {
+    background-color: #a58686;
+    transition: background-color 0.5s ease;
+}
+
 
