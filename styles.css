@@ -70,7 +70,45 @@ main {
 
 #features:hover {
     background-color: #a58686;
-    transition: background-color 0.5s ease;
+    transition: background-color 1s ease;
+}
+form { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 12px; 
+  width: 300px; 
+  margin: 0 auto; 
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: -4px; 
+}
+
+input, textarea, button { 
+  width: 100%; 
+  box-sizing: border-box; 
+  padding: 8px;
+  border: 2px solid #767676; 
+  border-radius: 4px;
+}
+
+input:user-invalid, textarea:user-invalid { 
+  border: 2px solid red; 
+}
+
+input:user-valid, textarea:user-valid { 
+  border: 2px solid green; 
+}
+
+input:focus, textarea:focus, button:focus { 
+  outline: 3px solid #005a9c; 
+  outline-offset: 2px; 
+}
+
+a:focus {
+    color: #b11060;
+    text-decoration: underline;
 }
 
 

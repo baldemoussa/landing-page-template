@@ -1,53 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page Template</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- header -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <!--main-->
-    <main>        
-        <h1>Welcome to Our Landing Page</h1>
-        <section id="hero">
-            <h2>Summary</h2>
-            <p>In this lesson, you were introduced to the command line interface (CLI) and learned how to set up a GitHub 
-                account to manage repositories. You also explored the basics of version control and how to initialize a Git 
-                repository for tracking changes. These skills are foundational for working on software projects, both individually 
-                and in teams.
-                In the next lesson, you will learn how to stage, commit, and track changes in your project using Git commands.
-            </p>
-        </section>
-        <section id="features">
-            <h2>Features</h2>
-            <ul>
-                <li>Feature 1</li>
-                <li>Feature 2</li>
-                <li>Feature 3</li>
-            </ul>
-        </section>
-    </main>
-    <footer>        
+    <main>
+      <h1>Welcome to Our Landing Page</h1>
+      <section id="hero">
+        <h2>Summary</h2>
+        <p>
+          In this lesson, you were introduced to the command line interface
+          (CLI) and learned how to set up a GitHub account to manage
+          repositories. You also explored the basics of version control and how
+          to initialize a Git repository for tracking changes. These skills are
+          foundational for working on software projects, both individually and
+          in teams. In the next lesson, you will learn how to stage, commit, and
+          track changes in your project using Git commands.
+        </p>
+      </section>
+      <section id="features">
+        <h2>Features</h2>
         <ul>
-            <li> <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" >Facebook</a></li>
-            <li> <a href="https://x.com" target="_blank" rel="noopener noreferrer" >X</a></li>
-            <li> <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" >Instagram</a></li>
-            <li> <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" >LinkedIn</a></li>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
         </ul>
-        <p>&copy; 2026 Landing Page Template. All rights reserved.</p>
+      </section>
+      <section id="features">
+        <h2>Call to Action</h2>
+        <p>Get in touch with us!</p>
+        <form aria-describedby="contact-form-error">
+            <div id="contact-form-error" class="error" role="alert" aria-live="polite"></div>
+            <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            aria-required="true"
+            aria-invalid="false"
+          /></div>
+          <div class="form-group"></div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            aria-required="true"
+            aria-invalid="false"
+          />
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              aria-required="true"
+              aria-invalid="false"
+            />
+          </div>
+            </div>
+          <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            aria-required="true"
+            aria-invalid="false"
+          ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+         
+        </form>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+        </li>
+        <li>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer"
+            >X</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+      <p>&copy; 2026 Landing Page Template. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
